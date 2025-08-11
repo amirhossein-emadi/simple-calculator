@@ -1,4 +1,5 @@
 import { InputNumbersError } from "./errors";
+import { Decimal } from 'decimal.js';
 
 /**
  * It adds all numbers.
@@ -11,6 +12,6 @@ export function add(...numbers: number[]): number {
         throw new InputNumbersError('For addition, you must insert at least one number!');
     }
     return numbers.reduce((result, number) => {
-        return result + number;
-    }, 0);
+        return result.plus(new Decimal(number));
+    }, new Decimal(0)).toNumber();
 }
