@@ -1,6 +1,6 @@
-import {add} from './calculator';
+import {add} from '../src/calculator';
 import {describe, test, expect} from '@jest/globals';
-import {InputNumbersError} from "./errors";
+import {InputNumbersError} from "../src/errors";
 
 describe('add', () => {
     test('adds 3 to 4 (2 numbers)', () => {

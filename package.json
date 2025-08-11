@@ -1,12 +1,13 @@
 {
   "name": "simple-calculator",
   "version": "1.0.0",
-  "description": "",
-  "main": "dist/index.js",
+  "description": "A simple calculator module",
+  "main": "dist/calculator.js",
+  "types": "dist/calculator.d.ts",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/index.js",
-    "test": "jest"
+    "test": "jest --coverage",
+    "prepack": "npm run build"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
@@ -17,5 +18,8 @@
   "private": true,
   "dependencies": {
     "decimal.js": "^10.6.0"
-  }
+  },
+  "files": [
+    "dist/**/*"
+  ]
 }
