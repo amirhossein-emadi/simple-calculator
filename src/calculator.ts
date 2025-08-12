@@ -1,17 +1,22 @@
 import { InputNumbersError } from "./errors";
 import { Decimal } from 'decimal.js';
 
-/**
- * It adds all numbers.
- * @param {number[]} numbers the numbers for `+` operation.
- * @return {number} the result of addition.
- * @throws {InputNumbersError} There is no numbers as parameter.
- */
 export function add(...numbers: number[]): number {
     if (numbers.length === 0) {
-        throw new InputNumbersError('For addition, you must insert at least one number!');
+        throw new InputNumbersError('addition');
     }
     return numbers.reduce((result, number) => {
         return result.plus(new Decimal(number));
     }, new Decimal(0)).toNumber();
+}
+
+export function subtract(...numbers: number[]): number {
+    if (numbers.length === 0) {
+        throw new InputNumbersError('subtraction');
+    }
+    let subtractResult = new Decimal(numbers[0]);
+    for (let i = 1; i < numbers.length; i++) {
+        subtractResult = subtractResult.minus(new Decimal(numbers[i]));
+    }
+    return subtractResult.toNumber();
 }
