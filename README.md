@@ -11,3 +11,10 @@
 - **Division Operation (`/`)**
 - **Exponentiation Operation (`**` or `^`)**
 - **Remainder Operation (`%`)**
+
+# Dependencies
+
+- [**Jest - JavaScript Testing Framework**](https://jestjs.io/docs/getting-started)
+- [**ts-jest**](https://www.npmjs.com/package/ts-jest)
+- [**types-jest**](https://www.npmjs.com/package/@types/jest)
+- [**decimal.js**](https://www.npmjs.com/package/decimal.js)
