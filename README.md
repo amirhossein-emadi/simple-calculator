@@ -1,7 +1,7 @@
 **Simple Calculator**
 
-[![CI Pipeline](https://github.com/amirhossein-emadi/simple-calculator/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/amirhossein-emadi/simple-calculator/actions/workflows/ci.yml)
-[![codecov](https://app.codecov.io/github/amirhossein-emadi/simple-calculator/branch/main/graph/badge.svg)](https://app.codecov.io/github/amirhossein-emadi/simple-calculator)
+[![CI](https://github.com/amirhossein-emadi/simple-calculator/actions/workflows/ci.yml/badge.svg)](https://github.com/amirhossein-emadi/simple-calculator/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/amirhossein-emadi/simple-calculator/branch/main/graph/badge.svg)](https://app.codecov.io/github/amirhossein-emadi/simple-calculator)
 
 # Features
 
